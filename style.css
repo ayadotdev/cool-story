@@ -11,7 +11,8 @@ body{
 #text-area{
     width:80%;
     height:60%;
-    margin: 0 auto
+    margin: 0 auto;
+    overflow:scroll;
 }
 #buttons-area{
     width:80%;
@@ -25,3 +26,20 @@ body{
     height: 50%;
     margin:auto auto;
 }
+
+
+
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#text-area::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #text-area {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
