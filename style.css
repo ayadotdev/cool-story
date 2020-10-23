@@ -1,0 +1,27 @@
+*{
+    border:1px solid black
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+#text-area{
+    width:80%;
+    height:60%;
+    margin: 0 auto
+}
+#buttons-area{
+    width:80%;
+    height:30%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-around;
+}
+.btn{
+    width: 25%;
+    height: 50%;
+    margin:auto auto;
+}
