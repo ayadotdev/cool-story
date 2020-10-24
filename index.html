@@ -9,14 +9,14 @@
 <body>
 
 <div id="text-area">
-    <p id="first-part">lorem ipsum</p>
-    <p id="first-part">lorem ipsum</p>
-    <p id="third-part">lorem ipsum</p>
-    <p id="first-part">lorem ipsum</p>
-    <p id="first-part">lorem ipsum</p>
-    <p id="third-part">lorem ipsum</p>
-    <p id="first-part">lorem ipsum</p>
-    <p id="first-part">lorem ipsum</p>
+    <p hidden id="first-part">i am the first part</p>
+    <p id="text1">are you hungry?</p>
+    <p hidden id="text2">then eat!</p>
+    <p hidden id="text3">are you sleepy=</p>
+    <p hidden id="text4">are you full now?</p>
+    <p hidden id="text5">starve then!!</p>
+    <p hidden id="text6">sleep!</p>
+    <p hidden id="text7">you should be happy then :)</p>
     <p id="third-part">lorem ipsum</p>
     <p id="first-part">lorem ipsum</p>
     <p id="first-part">lorem ipsum</p>
@@ -38,9 +38,15 @@
     <p id="third-part">lorem ipsum</p>
 </div>
 <div id="buttons-area">
-    <button id="btn-1" class="btn">Choice1</button>
-    <button id="btn-2" class="btn">Choice2</button>
+    <button id="btn-1" class="btn" type="button" onclick=pressBtn1()>yes</button>
+    <button id="btn-2" class="btn" type="button" onclick=pressBtn2()>no</button>
+    <button hidden id="btn-3" class="btn" type="button" onclick=pressBtn3()>yes</button>
+    <button hidden id="btn-4" class="btn" type="button" onclick=pressBtn4()>no</button>
+    <button hidden id="btn-5" class="btn" type="button" onclick=pressBtn5()>yes</button>
+    <button hidden id="btn-6" class="btn" type="button" onclick=pressBtn6()>no</button>
+    <button hidden id="btn-share" class="btn" type="button" onclick=pressBtn6()>share on fb</button>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
