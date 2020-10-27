@@ -51,7 +51,8 @@ body{
     padding: 3%
 }
 img{
-    width:35%
+    width:35%;
+    margin-bottom: 5vh
 }
 p{
     width:45%
