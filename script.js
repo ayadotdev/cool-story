@@ -45,7 +45,6 @@ const chapter1 = {
 // This function has only the logic to display the chapter in the HTML
 // (phrase and img in the #wholestory div  and the buttons in the #buttons div )
 function changeChapter(chapterToShow) {
-/* TEIKO QUESTION */
     //remove all existing buttons from the #buttons div
     document.querySelector("#buttons").innerHTML = "";
     //append a new <p> to the #wholestory div 
@@ -68,6 +67,8 @@ function changeChapter(chapterToShow) {
 
     //SCROLL TO BOTTOM
     wholestory.scrollTop = wholestory.scrollHeight;
+
+
 
 
 
