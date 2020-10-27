@@ -3,25 +3,30 @@
 }
 body{
     width:100vw;
-    height:100vh;
+    height:95vh;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
 }
 .scroll{
     width:80%;
-    height:60%;
+    height:70%;
     margin: 0 auto;
     overflow:scroll;
-}
-.flex-container{
     display:flex;
-    flex-direction:row /*we need to change it on js to move the picture to the other part. let's use row and row-reverse*/
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+img{
+    width:35%
+}
+p{
+    width:45%
 }
 
 #buttons{
     width:80%;
-    height:30%;
+    height:25%;
     margin: 0 auto;
     display:flex;
     justify-content:space-around;
