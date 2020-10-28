@@ -29,10 +29,10 @@ const chapter2 = {
 }
 
 const chapter1 = {
-    phrase: "You wake up in the very dark and cold room. You open your eyes and you see the door. Would you open that door?",
-    img: "https://theroyalliar.files.wordpress.com/2019/05/sv2t3.jpg?w=640",
-    buttonChoice1: { text: "Yes", nextChapter: chapter2 },
-    buttonChoice2: { text: "No", nextChapter: chapter5 }
+    phrase: "BLA BLA BLA",
+    img: "pictures/club-activities-5.jpg",
+    buttonChoice1: { text: "OPTION1", nextChapter: chapter2 },
+    buttonChoice2: { text: "OPTION2", nextChapter: chapter5 }
 }
 
 
@@ -58,6 +58,11 @@ function removeText(){
 
 }
 
+let pageNumber = () => {
+    document.getElementById("page1").innerHTML = Number(document.getElementById("page1").innerHTML) + Number(2);
+    document.getElementById("page2").innerHTML = Number(document.getElementById("page2").innerHTML) + Number(2);
+}
+
 
 // This function has only the logic to display the chapter in the HTML
 // (phrase and img in the #wholestory div  and the buttons in the #buttons div )
@@ -66,6 +71,7 @@ function changeChapter(chapterToShow) {
    removePreviousButtons(); 
    removeText();
 
+   pageNumber();
 
     //append a new <p> to the #wholestory div 
     const wholestory = document.querySelector("#wholestory");
@@ -96,6 +102,7 @@ function changeChapter(chapterToShow) {
     if (chapterToShow.buttonChoice1.nextChapter !== null) {
 
         const button1 = document.createElement("input");
+        button1.className = 'btn'; 
         button1.type = "button";
         button1.value = chapterToShow.buttonChoice1.text;
         button1.addEventListener("click", function () {
@@ -110,6 +117,7 @@ function changeChapter(chapterToShow) {
 
 
         const button2 = document.createElement("input");
+        button2.className = 'btn';
         button2.type = "button";
         button2.value = chapterToShow.buttonChoice2.text;
         button2.addEventListener("click", function () {
@@ -118,7 +126,4 @@ function changeChapter(chapterToShow) {
 
         document.querySelector("#buttons").appendChild(button2);
     }
-
-
-
 }
