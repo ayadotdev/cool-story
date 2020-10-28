@@ -43,6 +43,13 @@ body {
 .open-book * {
     position: relative;
 }
+input:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    }
+input:active {
+    top: 1px;
+    }
 
 /* Highlight */
 .open-book *::-moz-selection {
