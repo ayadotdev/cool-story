@@ -1,4 +1,3 @@
-
 //----------------CHAPTER STRUCTURE
 
 const chapter5 = {
