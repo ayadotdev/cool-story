@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #1d1f20;
+    background-image: url(https://image.freepik.com/free-photo/old-dark-brown-wooden-table-background_41471-9236.jpg);
     color: #e5e5e5;
     font: 16px/1.25 'Crimson Text', sans-serif;
     
@@ -266,7 +266,7 @@ body {
     }
 
     .open-book:before {
-        background-color: #8B4513;
+        background-color: #6E441C;
         border-radius: 0.25em;
         bottom: -1em;
         content: '';
