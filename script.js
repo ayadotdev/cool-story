@@ -4,7 +4,7 @@
 
 const chapter8 = {
     phrase: "CHAPTER 8",
-    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
+    img: ""/* "/* https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg */" */,
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
 }
@@ -12,14 +12,14 @@ const chapter8 = {
 
 const chapter7 = {
     phrase: "CHAPTER 7",
-    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
+    img: ""/* "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg" */,
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
 }
 
 const chapter6 = {
     phrase: "CHAPTER 6",
-    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
+    img: ""/* "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg" */,
     buttonChoice1: { text: "", nextChapter: chapter8 },
     buttonChoice2: { text: "", nextChapter: null }
 }
