@@ -2,6 +2,14 @@
 
 // CAN'T ADD MORE CHAPTERS
 
+const chapter9 = {
+    phrase: "CHAPTER 8",
+    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
+    buttonChoice1: { text: "", nextChapter: null },
+    buttonChoice2: { text: "", nextChapter: null }
+}
+
+
 const chapter8 = {
     phrase: "CHAPTER 8",
     img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
@@ -18,10 +26,10 @@ const chapter7 = {
 }
 
 const chapter6 = {
-    phrase: "CHAPTER 6",
-    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
-    buttonChoice1: { text: "", nextChapter: chapter8 },
-    buttonChoice2: { text: "", nextChapter: null }
+    phrase: "You leave her be, you walk into the kitchen and see seven women. The seven women are drinking martinis. They are clearly all over seventy. “Oh my goodness!” One woman to the fathest left says: “My dearest Agnes, we have been waiting for you for so long” please drink some red liquid? You ask “red liquid?” “Oh oops sorry silly me, Martini juice” You are faced with a choice, do you drink the martini juice? ",
+    img: "img/lady-with-martini-marjorie.jpg",
+    buttonChoice1: { text: "left", nextChapter: chapter8 },
+    buttonChoice2: { text: "right", nextChapter: chapter9 }
 }
 
 const chapter5 = {
@@ -32,7 +40,7 @@ const chapter5 = {
 }
 
 const chapter4 = {
-    phrase: "Aretha and youself decide to investigate. You put Aretha down and she leads the way. The hallway is long and dark.Its lined with a number of candles all of which gyrate to the whims of the wind blowing through the adjacent windows. You arrive at the end of the hallway you are faced with a choice left or right.  The left door sounfs like it there’s meowing, the right door sounfs like there’s moaning. Aretha seems really interested in the dor where there is meowing...but you yourself feel a little more partial to the moaning...You wonder if its only because your husband has been dead for four years and vicarious thrills are all that satiate you...the moment passes MEOW OR MOAN?",
+    phrase: "Aretha and youself decide to investigate. You put Aretha down and she leads the way. The hallway is long and dark.Its lined with a number of candles all of which gyrate to the whims of the wind blowing through the adjacent windows. You arrive at the end of the hallway you are faced with a choice left or right.  The left door sounfs like it there’s meowing, the right door sounfs like there’s moaning. Aretha seems really interested in the door where there is meowing...but you yourself feel a little more partial to the moaning...You wonder if its only because your husband has been dead for four years and vicarious thrills are all that satiate you...the moment passes MEOW OR MOAN?",
     img: "img/curtains-in-the-wind.jpg",
     buttonChoice1: { text: "ENTER", nextChapter: null },
     buttonChoice2: { text: "CHASE", nextChapter: null }
