@@ -230,6 +230,10 @@ button.ai-element{
 .open-book header {
     padding-bottom: 1em;
 }
+footer{
+    margin-bottom: 0px
+}
+
 
 .open-book header *,
 .open-book footer * {
@@ -293,6 +297,7 @@ button.ai-element{
 /* Body Copy */
 .open-book article {
     line-height: 1.5;
+    height:90%
 }
 
 .open-book article *:not(.chapter-title):not(hr):not(dl) {
@@ -508,7 +513,6 @@ button.ai-element{
     .open-book footer #page-numbers {
         display: block;
     }
-
     /* Chapter Title */
     .open-book .chapter-title {
         font-size: 3em;
