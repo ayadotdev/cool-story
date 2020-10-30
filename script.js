@@ -2,9 +2,9 @@
 
 // CAN'T ADD MORE CHAPTERS
 
-const chapter8 = {
+/* const chapter8 = {
     phrase: "CHAPTER 8",
-    img: ""/* "/* https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg */" */,
+    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
 }
@@ -12,17 +12,17 @@ const chapter8 = {
 
 const chapter7 = {
     phrase: "CHAPTER 7",
-    img: ""/* "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg" */,
+    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
 }
 
 const chapter6 = {
     phrase: "CHAPTER 6",
-    img: ""/* "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg" */,
+    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
     buttonChoice1: { text: "", nextChapter: chapter8 },
     buttonChoice2: { text: "", nextChapter: null }
-}
+} */
 
 const chapter5 = {
     phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
@@ -41,8 +41,8 @@ const chapter4 = {
 const chapter3 = {
     phrase: "Right you hear women laughing, cackling really. You decide you are going to investigate. You wander down the hallway holding Aretha Frankelmittens, but suddenly she jumps out of your arms. You have to decide do you let her be and go into the kitchen where the laughter is coming or chase after her.",
     img: "img/club-cat.jpg",
-    buttonChoice1: { text: "LET ARETHA GO", nextChapter: chapter6 },
-    buttonChoice2: { text: "CHASE AFTER HER", nextChapter: chapter7 }
+    buttonChoice1: { text: "LET ARETHA GO", nextChapter: chapter5 },
+    buttonChoice2: { text: "CHASE AFTER HER", nextChapter: chapter4 }
 }
 
 const chapter2 = {
@@ -148,15 +148,16 @@ function changeChapter(chapterToShow) {
     }
 }
 
-        document.querySelector("#buttons").appendChild(button2);
+ /*        document.querySelector("#buttons").appendChild(button2); */
     
 
 
-document.getElementById("dress").addEventListener("mouseenter", function() { 
-document.getElementById("dress-img").style.display = 'block';
-})
-    
+/* document.getElementById("dress").addEventListener("mouseenter", function() { 
+document.getElementById("dress-img").style.display = 'block'; */
+/* }) */
+/*     
 document.getElementById("dress").addEventListener("mouseleave", function() {
 
 document.getElementById("dress-img").style.display = 'none';
 })
+ */
