@@ -57,25 +57,49 @@ function removeText(){
     textDiv.querySelectorAll('*').forEach(p => p.remove());
 
 }
+//add 2 to a previous number page
 
 let pageNumber = () => {
     document.getElementById("page1").innerHTML = Number(document.getElementById("page1").innerHTML) + Number(2);
     document.getElementById("page2").innerHTML = Number(document.getElementById("page2").innerHTML) + Number(2);
 }
 
+//this function creates buttons with css style 
+
+function createButtons (buttonChoice){
+
+    const divButton = document.createElement("div");
+    divButton.className = "section__box";
+
+    
+    const button = document.createElement("button");
+    button.classList.add("r-button" ,"ai-element", "ai-element_type3" ,"ai-element7");
+    button.addEventListener("click", function () {
+        changeChapter(buttonChoice.nextChapter);
+    }, false);
+    
+    const buttonSpan = document.createElement("span");
+    buttonSpan.className = "ai-element__label";
+    buttonSpan.innerHTML = buttonChoice.text;
+    
+    button.appendChild(buttonSpan);
+    divButton.appendChild(button);
+      
+    document.querySelector("#buttons").appendChild(divButton);
+    
+}
 
 // This function has only the logic to display the chapter in the HTML
 // (phrase and img in the #wholestory div  and the buttons in the #buttons div )
+
 function changeChapter(chapterToShow) {
 
    removePreviousButtons(); 
    removeText();
-
    pageNumber();
 
     //append a new <p> to the #wholestory div 
     const wholestory = document.querySelector("#wholestory");
-
     const paragraph = document.createElement("p");
     const text = document.createTextNode(chapterToShow.phrase);
     paragraph.appendChild(text);
@@ -89,41 +113,19 @@ function changeChapter(chapterToShow) {
     wholestory.appendChild(img);
 
 
-
-
-
-    //SCROLL TO BOTTOM
-    wholestory.scrollTop = wholestory.scrollHeight;
-
-
-
-
     //if there is a nextChapter in buttonChoice1 we add the button 
     if (chapterToShow.buttonChoice1.nextChapter !== null) {
-
-        const button1 = document.createElement("input");
-        button1.className = 'btn'; 
-        button1.type = "button";
-        button1.value = chapterToShow.buttonChoice1.text;
-        button1.addEventListener("click", function () {
-            changeChapter(chapterToShow.buttonChoice1.nextChapter);
-        }, false);
-
-        document.querySelector("#buttons").appendChild(button1);
+        createButtons(chapterToShow.buttonChoice1);
     }
 
     //if there is a nextChapter in buttonChoice2 we add the button 
     if (chapterToShow.buttonChoice2.nextChapter !== null) {
-
-
-        const button2 = document.createElement("input");
-        button2.className = 'btn';
-        button2.type = "button";
-        button2.value = chapterToShow.buttonChoice2.text;
-        button2.addEventListener("click", function () {
-            changeChapter(chapterToShow.buttonChoice2.nextChapter);
-        }, false);
-
-        document.querySelector("#buttons").appendChild(button2);
+        createButtons(chapterToShow.buttonChoice2);
     }
 }
+
+
+
+
+
+
