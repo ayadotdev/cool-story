@@ -552,3 +552,7 @@ footer{
     opacity: 1;
     top: -50px;
 }
+
+.yuri-link {
+    background: none !important;
+}
