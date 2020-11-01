@@ -1,4 +1,20 @@
 
+const chapter17 = {
+    phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
+    img: "img/get-out-2.jpg",
+    buttonChoice1: { text: "", nextChapter: null },
+    buttonChoice2: { text: "", nextChapter: null }
+}
+
+
+const chapter16 = {
+    phrase: "You wake up to discover you are tied to a chair… There is the waft smell of singed hair. There is a harem of cats sitting in front of you. They are wearing little leather outfits… “How cute” you mutter. The cats part like the red sea and all thats left is a slim cat with an hourglass waist and a penchant for violence. You realize there is a mirror sitting back of the room. “I look good” you say to yourself. “Mreeoww” The yowl of a feral storm adjacent to you. Its Aretha. “Aretha...how could you?” Aretha steps forward into the rays of moonbeams. She’s holding a bottle of gasoline. She says, “Mreeow meow meow meow” She sets you on fire and warms herself by the flame. YOU DEFINETYLY SHOULD HAVE QUIT BEFORE!",
+    img: "img/see-you-next-time.jpg",
+    buttonChoice1: { text: "", nextChapter: null },
+    buttonChoice2: { text: "", nextChapter: null }
+}
+
+
 const chapter15 = {
     phrase: "You decide to let your old bitty have some fun. As you turn to leave...there is a crash of glass and you black out. You wake up. You are tied in a chair.Sitting in frontof you is your cat Aretha with a bottle of gasoline. “How could you do this?” You say gasping. “Mreeow mreeow mreeow” You remember that she’s a cat and doesn’t speak human. She sets you on fire and warms herself by the flame.",
     img: "img/see-you-next-time.jpg",
@@ -49,10 +65,10 @@ const chapter9 = {
 }
 
 const chapter8 = {
-    phrase: "You drink the Martini Juice. Its refreshing yurmmy cRanberry. You ask the ladies what their names are...Four of them are named Corinne or something like that. The other ones name is Sheryl. Someone named Linda went to the bathroom and “should be back soon”. Everything is going pretty good but about an hour into the conversation things start to get a little fuzzy. Tom Petty is playing on the radio...you think to yourself…”Is that a radio?” You black out.",
+    phrase: "You drink the Martini Juice. Its refreshing yummy cRanberry. You ask the ladies what their names are...Four of them are named Corinne or something like that. The other ones name is Sheryl. Someone named Linda went to the bathroom and “should be back soon”. Everything is going pretty good but about an hour into the conversation things start to get a little fuzzy. Tom Petty is playing on the radio...you think to yourself…”Is that a radio?” You black out. DO YOU REALLY WANT TO GO ON, DARLING?",
     img: "img/room-full-of-cats-3.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
+    buttonChoice1: { text: "DEFINETELY", nextChapter: chapter16 },
+    buttonChoice2: { text: "NO WAY", nextChapter: chapter17 }
 }
 
 
