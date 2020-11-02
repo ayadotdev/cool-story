@@ -211,10 +211,19 @@ function changeChapter(chapterToShow) {
     // if there are no buttons - then display RESTART button
     if (chapterToShow.buttonChoice1.nextChapter === null && chapterToShow.buttonChoice2.nextChapter === null) {
         document.getElementById('restart').style.display = 'block';
+        // document.getElementById("page1").innerHTML = Number(1) + Number(2)
+        // document.getElementById("page2").innerHTML = Number(2) + Number(2)
+        
     }
-    // if there already are two buttons on the screen, then hid RESTART button
+    
+
+    // if there already are two buttons on the screen, then hide RESTART button
     if (chapterToShow.buttonChoice1.nextChapter !== null && chapterToShow.buttonChoice2.nextChapter !== null) {
         document.getElementById('restart').style.display = 'none';
+        // document.getElementById("page1").innerHTML = Number(1) + Number(2)
+        // document.getElementById("page2").innerHTML = Number(2) + Number(2)
+             
+
     }
 
 }
