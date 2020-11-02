@@ -1,4 +1,3 @@
-
 const chapter17 = {
     phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
     img: "img/get-out-2.jpg",
