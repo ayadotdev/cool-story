@@ -1,10 +1,15 @@
-//----------------CHAPTER STRUCTURE
 
-// CAN'T ADD MORE CHAPTERS
+const chapter9 = {
+    phrase: "CHAPTER 8",
+    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
+    buttonChoice1: { text: "", nextChapter: null },
+    buttonChoice2: { text: "", nextChapter: null }
+}
 
-const chapter17 = {
-    phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
-    img: "img/get-out-2.jpg",
+
+const chapter8 = {
+    phrase: "CHAPTER 8",
+    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
 }
@@ -17,40 +22,11 @@ const chapter16 = {
     buttonChoice2: { text: "", nextChapter: null }
 }
 
-
-const chapter15 = {
-    phrase: "You decide to let your old bitty have some fun. As you turn to leave...there is a crash of glass and you black out. You wake up. You are tied in a chair.Sitting in frontof you is your cat Aretha with a bottle of gasoline. “How could you do this?” You say gasping. “Mreeow mreeow mreeow” You remember that she’s a cat and doesn’t speak human. She sets you on fire and warms herself by the flame.",
-    img: "img/see-you-next-time.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
-}
-
-const chapter14 = {
-    phrase: "You chase after her. As you do, you notice that all of the cats are actually wearing tiny leather hoods. This isn’t a normal feline mating ritual party. “ARETHA” get back here. Aretha turns back towards you. She pulls out a gun and points it at you…in a deeply demonic voice she says “AGNES I AM SAVING YOU” You also pull out a gun. FIve shots are fired. You both die. You stare into her eyes as she stares into yours… You mouth the words “Why?” She pantomimes with her paws the words...because “I worship a Pagan Cat God that demands we sacrifice old women in the middle of the night in order to attain eternal life...I have ovarian cancer or did you forget.” FIN.",
-    img: "img/see-you-next-time.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
-}
-
-const chapter13 = {
-    phrase: "MOAN...You open the door to discover a massive CAT MATING RITUAL. MRRRREOOOOWWWWWWWWWWWW they scream at you to close the door. Aretha bounds inside, she’s too old to have kittens but you’re worried that as a spinster cat her eyes might be bigger than her ovarian cancer. (i know you forgot she has ovarian cancer). YOU have two choices, Choice one you chase after her. Choice two you let your old bitty have some fun.",
-    img: "img/room-full-of-cats-2.jpg",
-    buttonChoice1: { text: "ONE", nextChapter: chapter14 },
-    buttonChoice2: { text: "TWO", nextChapter: chapter15 }
-}
-
-const chapter12 = {
-    phrase: "MEOW...You open the door to discover a massive CAT MATING RITUAL. MRRRREOOOOWWWWWWWWWWWW they scream at you to close the door. Aretha bounds inside, she’s too old to have kittens but you’re worried that as a spinster cat her eyes might be bigger than her ovarian cancer. (i know you forgot she has ovarian cancer). YOU have two choices, Choice one you chase after her. Choice two you let your old bitty have some fun.",
-    img: "img/room-full-of-cats-2.jpg",
-    buttonChoice1: { text: "ONE", nextChapter: chapter14 },
-    buttonChoice2: { text: "TWO", nextChapter: chapter15 }
-}
-
-const chapter11 = {
-    phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
-    img: "img/get-out.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
+const chapter6 = {
+    phrase: "You leave her be, you walk into the kitchen and see seven women. The seven women are drinking martinis. They are clearly all over seventy. “Oh my goodness!” One woman to the fathest left says: “My dearest Agnes, we have been waiting for you for so long” please drink some red liquid? You ask “red liquid?” “Oh oops sorry silly me, Martini juice” You are faced with a choice, do you drink the martini juice? ",
+    img: "img/lady-with-martini-marjorie.jpg",
+    buttonChoice1: { text: "left", nextChapter: chapter8 },
+    buttonChoice2: { text: "right", nextChapter: chapter9 }
 }
 
 const chapter10 = {
