@@ -550,9 +550,9 @@ footer{
 
 .link:hover span {
     opacity: 1;
-    top: -50px;}
+    top: -50px;
+}
 
-.yuri-link{
-    font-weight:bolder;
-    background:none !important
+.yuri-link {
+    background: none !important;
 }
