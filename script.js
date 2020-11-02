@@ -174,6 +174,7 @@ function createButtons(buttonChoice) {
 
 }
 
+//this function turns pages numbers to 3 and 4 (our  1st chapter)
 function resetPageNumbers() {
     document.getElementById("page1").innerHTML = Number(1) + Number(2);
     document.getElementById("page2").innerHTML = Number(2) + Number(2);
