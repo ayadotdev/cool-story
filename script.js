@@ -86,42 +86,6 @@ const chapter6 = {
     buttonChoice2: { text: "NAAA!", nextChapter: chapter9 }
 }
 
-const chapter10 = {
-    phrase: "You wake up to find yourself tied to a chair. The four corinnes or something like that are tied adjacent to you. There’s a fire in the fireplace...you think to yourself..”its summertime” Cats filter in like a flash flood and surround all of you. One cat with a patch over its eye steps forward… “Mreeow mreeow mreeow” Another cat steps forward. It begins doing a sign language translation of what the pirate cat was saying. “Ohhhh they;re inclusive,  I love that,” chimed one of the corinnes (or something like that). “I can speak sign language” ‘You don’t speak sign language thats the point” “Ok, he says “I know you are probably wondering why you are here... Well we cats just don’t live forever “We worship a pagan cat god” YOU SHOULD HAVE QUIT EARLIER!",
-    img: "img/room-full-of-cats.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
-}
-
-const chapter9 = {
-    phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
-    img: "img/get-out-2.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
-}
-
-const chapter8 = {
-    phrase: "You drink the Martini Juice. Its refreshing yummy cRanberry. You ask the ladies what their names are...Four of them are named Corinne or something like that. The other ones name is Sheryl. Someone named Linda went to the bathroom and “should be back soon”. Everything is going pretty good but about an hour into the conversation things start to get a little fuzzy. Tom Petty is playing on the radio...you think to yourself…”Is that a radio?” You black out. DO YOU REALLY WANT TO GO ON, DARLING?",
-    img: "img/room-full-of-cats-3.jpg",
-    buttonChoice1: { text: "DEFINETELY", nextChapter: chapter16 },
-    buttonChoice2: { text: "NO WAY", nextChapter: chapter17 }
-}
-
-
-const chapter7 = {
-    phrase: "You chase after her, Aretha!!!! You scream bounding down the marble hallway. There are curtains billowing in the wind. She disappears behind a corner. You arrive to a corridor you hear meowing but you cant tell where. Aretha turns down the hallway and bounds into one of the drawing rooms. You smell a scent of singed hair. “Aretha? Are you here?” You’re beginning to wonder if coming to this cat country club retreat for old lady spinsters was a good idea… You walk into a room where a piano sits in the corner and a candlelabra is the only source of light. There is a strong scent of gasoline. “Aretha? Is that you? Aretha?” You see the back of someone’s head sitting on the couch… “Hello? Who is that?” As you round the corner you scream at the top of your lungs. ITS AN OLD WOMAN.  SHE”S BEEN BURNT TO A CRISP. Suddenly you hear a footstep behind you… “MRRREOOOOW” *something smashes you over the head* You black out. ARE YOU SURE YOU WANT TO GO ON, DARLING?",
-    img: "img/wanna-play-this-piano-yes-no.jpg",
-    buttonChoice1: { text: "DEFINETELY", nextChapter: chapter10 },
-    buttonChoice2: { text: "NO WAY", nextChapter: chapter11 }
-}
-
-const chapter6 = {
-    phrase: "You leave her be, you walk into the kitchen and see seven women. The seven women are drinking martinis. They are clearly all over seventy. “Oh my goodness!” One woman to the fathest left says: “My dearest Agnes, we have been waiting for you for so long” please drink some red liquid? You ask “red liquid?” “Oh oops sorry silly me, Martini juice” You are faced with a choice, do you drink the martini juice? ",
-    img: "img/lady-with-martini-marjorie.jpg",
-    buttonChoice1: { text: "DRINK IT!", nextChapter: chapter8 },
-    buttonChoice2: { text: "NAAA!", nextChapter: chapter9 }
-}
-
 const chapter5 = {
     phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
     img: "img/get-out.jpg",
@@ -256,3 +220,4 @@ document.getElementById("dress").addEventListener("mouseleave", function() {
 
 document.getElementById("dress-img").style.display = 'none';
 })
+
