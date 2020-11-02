@@ -170,6 +170,8 @@ function createButtons (buttonChoice){
     divButton.appendChild(button);
       
     document.querySelector("#buttons").appendChild(divButton);
+
+
     
 }
 
@@ -206,18 +208,29 @@ function changeChapter(chapterToShow) {
     if (chapterToShow.buttonChoice2.nextChapter !== null) {
         createButtons(chapterToShow.buttonChoice2);
     }
+// ************************************
+    // if there are no buttons - then display RESTART button
+    if (chapterToShow.buttonChoice1.nextChapter === null && chapterToShow.buttonChoice2.nextChapter === null) {
+        document.getElementById('restart').style.display = 'block';
+    }
+    // if there already are two buttons on the screen, then hid RESTART button
+    if (chapterToShow.buttonChoice1.nextChapter !== null && chapterToShow.buttonChoice2.nextChapter !== null) {
+        document.getElementById('restart').style.display = 'none';
+    }
+
 }
 
-        document.querySelector("#buttons").appendChild(button2);
+
+// document.querySelector("#buttons").appendChild(button2);
     
 
 
-document.getElementById("dress").addEventListener("mouseenter", function() { 
-document.getElementById("dress-img").style.display = 'block';
-})
+// document.getElementById("dress").addEventListener("mouseenter", function() { 
+// document.getElementById("dress-img").style.display = 'block';
+// })
     
-document.getElementById("dress").addEventListener("mouseleave", function() {
+// document.getElementById("dress").addEventListener("mouseleave", function() {
 
-document.getElementById("dress-img").style.display = 'none';
-})
+// document.getElementById("dress-img").style.display = 'none';
+// })
 
