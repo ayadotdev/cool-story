@@ -127,14 +127,14 @@ const chapter1 = {
 
 
 //remove all existing buttons from the #buttons div
-function removePreviousButtons(){
+function removePreviousButtons() {
     //document.querySelector("#buttons").innerHTML = "";
 
     let buttonsDiv = document.getElementById("buttons");
     buttonsDiv.querySelectorAll('*').forEach(button => button.remove());
 }
- //remove all text from wholestory div   
-function removeText(){
+//remove all text from wholestory div   
+function removeText() {
 
     let textDiv = document.getElementById("wholestory");
     textDiv.querySelectorAll('*').forEach(p => p.remove());
@@ -149,39 +149,51 @@ let pageNumber = () => {
 
 //this function creates buttons with css style 
 
-function createButtons (buttonChoice){
+function createButtons(buttonChoice) {
 
     const divButton = document.createElement("div");
     divButton.className = "section__box";
 
-    
+
     const button = document.createElement("button");
-    button.classList.add("r-button" ,"ai-element", "ai-element_type3" ,"ai-element7");
+    button.classList.add("r-button", "ai-element", "ai-element_type3", "ai-element7");
     button.addEventListener("click", function () {
         changeChapter(buttonChoice.nextChapter);
     }, false);
-    
+
     const buttonSpan = document.createElement("span");
     buttonSpan.className = "ai-element__label";
     buttonSpan.innerHTML = buttonChoice.text;
-    
+
     button.appendChild(buttonSpan);
     divButton.appendChild(button);
-      
+
     document.querySelector("#buttons").appendChild(divButton);
 
 
-    
+
 }
 
+function resetPageNumbers() {
+    document.getElementById("page1").innerHTML = Number(1) + Number(2);
+    document.getElementById("page2").innerHTML = Number(2) + Number(2);
+
+}
 // This function has only the logic to display the chapter in the HTML
 // (phrase and img in the #wholestory div  and the buttons in the #buttons div )
 
 function changeChapter(chapterToShow) {
 
-   removePreviousButtons(); 
-   removeText();
-   pageNumber();
+    removePreviousButtons();
+    removeText();
+    if (chapterToShow === chapter1) {
+        resetPageNumbers();
+    } else {
+        pageNumber();
+    }
+
+
+
 
     //append a new <p> to the #wholestory div 
     const wholestory = document.querySelector("#wholestory");
@@ -207,36 +219,33 @@ function changeChapter(chapterToShow) {
     if (chapterToShow.buttonChoice2.nextChapter !== null) {
         createButtons(chapterToShow.buttonChoice2);
     }
-// ************************************
+    // ************************************
     // if there are no buttons - then display RESTART button
     if (chapterToShow.buttonChoice1.nextChapter === null && chapterToShow.buttonChoice2.nextChapter === null) {
         document.getElementById('restart').style.display = 'block';
         // document.getElementById("page1").innerHTML = Number(1) + Number(2)
-        // document.getElementById("page2").innerHTML = Number(2) + Number(2)
-        
+        // document.getElementById("page2").innerHTML = Number(2) + Number(2)    
     }
-    
+
 
     // if there already are two buttons on the screen, then hide RESTART button
     if (chapterToShow.buttonChoice1.nextChapter !== null && chapterToShow.buttonChoice2.nextChapter !== null) {
         document.getElementById('restart').style.display = 'none';
         // document.getElementById("page1").innerHTML = Number(1) + Number(2)
         // document.getElementById("page2").innerHTML = Number(2) + Number(2)
-             
-
     }
 
 }
 
 
 // document.querySelector("#buttons").appendChild(button2);
-    
+
 
 
 // document.getElementById("dress").addEventListener("mouseenter", function() { 
 // document.getElementById("dress-img").style.display = 'block';
 // })
-    
+
 // document.getElementById("dress").addEventListener("mouseleave", function() {
 
 // document.getElementById("dress-img").style.display = 'none';
