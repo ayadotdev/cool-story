@@ -6,8 +6,11 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-image: url(https://image.freepik.com/free-photo/old-dark-brown-wooden-table-background_41471-9236.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width:100vw;
     height:100vh
 }
@@ -249,7 +252,7 @@ button.ai-element{
 }
 
 .open-book footer {
-    padding-top: 1em;
+    padding-top: 100px
 }
 
 .open-book footer #page-numbers {
@@ -414,6 +417,7 @@ button.ai-element{
     .open-book {
         margin: 1em;
         position: relative;
+        background-color:rgba(235  , 220, 194, 1)
     }
 
     .open-book:before {
@@ -497,6 +501,7 @@ button.ai-element{
 
     .open-book header:before {
         transform: rotate(-2deg);
+        background-color:rgba(235  , 220, 194, 1)
     }
 
     .open-book header:after,
@@ -506,6 +511,8 @@ button.ai-element{
 
     .open-book header:after {
         transform: rotate(2deg);
+        
+        background-color:rgba(235  , 220, 194, 1)
     }
 
     .open-book footer:before,
@@ -515,10 +522,14 @@ button.ai-element{
 
     .open-book footer:before {
         transform: rotate(2deg);
+        
+        background-color:rgba(235  , 220, 194, 1)
     }
 
     .open-book footer:after {
         transform: rotate(-2deg);
+        
+        background-color:rgba(235  , 220, 194, 1)
     }
 
     .open-book header > *:last-child,
