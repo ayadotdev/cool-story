@@ -8,7 +8,6 @@
 
 body {
     background-image: url(https://image.freepik.com/free-photo/old-dark-brown-wooden-table-background_41471-9236.jpg);
-    color: #e5e5e5;
     width:100vw;
     height:100vh
 }
@@ -234,9 +233,7 @@ button.ai-element{
 .open-book header {
     padding-bottom: 1em;
 }
-footer{
-    margin-bottom: 0px
-}
+
 
 
 .open-book header *,
@@ -573,8 +570,7 @@ footer{
 
 .yuri-link{
     font-weight:bolder;
-    background:none !important;
-    display:inline !important
+    background:none !important
 }
 
 
