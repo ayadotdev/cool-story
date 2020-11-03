@@ -7,9 +7,7 @@
 }
 
 body {
-    background-image: url(https://image.freepik.com/free-photo/old-dark-brown-wooden-table-background_41471-9236.jpg);
-    color: #e5e5e5;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    background: url(`https://image.freepik.com/free-photo/old-dark-brown-wooden-table-background_41471-9236.jpg`);
     width:100vw;
     height:100vh
 }
@@ -535,7 +533,7 @@ footer{
     }
     /* Chapter Title */
     .open-book .chapter-title {
-        font-size: 3em;
+        font-size: 1.5em;
     }
 
     .open-book .chapter-title:before,
