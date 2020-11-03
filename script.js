@@ -1,28 +1,9 @@
-//----------------CHAPTER STRUCTURE
-
-// CAN'T ADD MORE CHAPTERS
-
-<<<<<<< HEAD
-const chapter9 = {
-    phrase: "CHAPTER 8",
-    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
-}
-
-
-const chapter8 = {
-    phrase: "CHAPTER 8",
-    img: "https://www.colemanconcierge.com/wp-content/uploads/2017/11/Ghosts-and-Legends-You-Survived.jpg",
-=======
 const chapter17 = {
     phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
     img: "img/get-out-2.jpg",
->>>>>>> 5a3dde320314c918518ff59135283b7af3a33a28
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
 }
-
 
 const chapter16 = {
     phrase: "You wake up to discover you are tied to a chair… There is the waft smell of singed hair. There is a harem of cats sitting in front of you. They are wearing little leather outfits… “How cute” you mutter. The cats part like the red sea and all thats left is a slim cat with an hourglass waist and a penchant for violence. You realize there is a mirror sitting back of the room. “I look good” you say to yourself. “Mreeoww” The yowl of a feral storm adjacent to you. Its Aretha. “Aretha...how could you?” Aretha steps forward into the rays of moonbeams. She’s holding a bottle of gasoline. She says, “Mreeow meow meow meow” She sets you on fire and warms herself by the flame. YOU DEFINETYLY SHOULD HAVE QUIT BEFORE!",
@@ -30,14 +11,6 @@ const chapter16 = {
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
 }
-
-<<<<<<< HEAD
-const chapter6 = {
-    phrase: "You leave her be, you walk into the kitchen and see seven women. The seven women are drinking martinis. They are clearly all over seventy. “Oh my goodness!” One woman to the fathest left says: “My dearest Agnes, we have been waiting for you for so long” please drink some red liquid? You ask “red liquid?” “Oh oops sorry silly me, Martini juice” You are faced with a choice, do you drink the martini juice? ",
-    img: "img/lady-with-martini-marjorie.jpg",
-    buttonChoice1: { text: "left", nextChapter: chapter8 },
-    buttonChoice2: { text: "right", nextChapter: chapter9 }
-=======
 
 const chapter15 = {
     phrase: "You decide to let your old bitty have some fun. As you turn to leave...there is a crash of glass and you black out. You wake up. You are tied in a chair.Sitting in frontof you is your cat Aretha with a bottle of gasoline. “How could you do this?” You say gasping. “Mreeow mreeow mreeow” You remember that she’s a cat and doesn’t speak human. She sets you on fire and warms herself by the flame.",
@@ -72,7 +45,6 @@ const chapter11 = {
     img: "img/get-out.jpg",
     buttonChoice1: { text: "", nextChapter: null },
     buttonChoice2: { text: "", nextChapter: null }
->>>>>>> 5a3dde320314c918518ff59135283b7af3a33a28
 }
 
 const chapter10 = {
@@ -95,7 +67,6 @@ const chapter8 = {
     buttonChoice1: { text: "DEFINETELY", nextChapter: chapter16 },
     buttonChoice2: { text: "NO WAY", nextChapter: chapter17 }
 }
-
 
 const chapter7 = {
     phrase: "You chase after her, Aretha!!!! You scream bounding down the marble hallway. There are curtains billowing in the wind. She disappears behind a corner. You arrive to a corridor you hear meowing but you cant tell where. Aretha turns down the hallway and bounds into one of the drawing rooms. You smell a scent of singed hair. “Aretha? Are you here?” You’re beginning to wonder if coming to this cat country club retreat for old lady spinsters was a good idea… You walk into a room where a piano sits in the corner and a candlelabra is the only source of light. There is a strong scent of gasoline. “Aretha? Is that you? Aretha?” You see the back of someone’s head sitting on the couch… “Hello? Who is that?” As you round the corner you scream at the top of your lungs. ITS AN OLD WOMAN.  SHE”S BEEN BURNT TO A CRISP. Suddenly you hear a footstep behind you… “MRRREOOOOW” *something smashes you over the head* You black out. ARE YOU SURE YOU WANT TO GO ON, DARLING?",
@@ -148,21 +119,17 @@ const chapter1 = {
 
 
 
-
-
 //----------------LOGIC
 
-
-
 //remove all existing buttons from the #buttons div
-function removePreviousButtons(){
+function removePreviousButtons() {
     //document.querySelector("#buttons").innerHTML = "";
 
     let buttonsDiv = document.getElementById("buttons");
     buttonsDiv.querySelectorAll('*').forEach(button => button.remove());
 }
- //remove all text from wholestory div   
-function removeText(){
+//remove all text from wholestory div   
+function removeText() {
 
     let textDiv = document.getElementById("wholestory");
     textDiv.querySelectorAll('*').forEach(p => p.remove());
@@ -177,37 +144,52 @@ let pageNumber = () => {
 
 //this function creates buttons with css style 
 
-function createButtons (buttonChoice){
+function createButtons(buttonChoice) {
 
     const divButton = document.createElement("div");
     divButton.className = "section__box";
 
-    
+
     const button = document.createElement("button");
-    button.classList.add("r-button" ,"ai-element", "ai-element_type3" ,"ai-element7");
+    button.classList.add("r-button", "ai-element", "ai-element_type3", "ai-element7");
     button.addEventListener("click", function () {
         changeChapter(buttonChoice.nextChapter);
     }, false);
-    
+
     const buttonSpan = document.createElement("span");
     buttonSpan.className = "ai-element__label";
     buttonSpan.innerHTML = buttonChoice.text;
-    
+
     button.appendChild(buttonSpan);
     divButton.appendChild(button);
-      
+
     document.querySelector("#buttons").appendChild(divButton);
-    
+
+
+
 }
 
+//this function turns pages numbers to 3 and 4 (our  1st chapter)
+function resetPageNumbers() {
+    document.getElementById("page1").innerHTML = Number(1) + Number(2);
+    document.getElementById("page2").innerHTML = Number(2) + Number(2);
+
+}
 // This function has only the logic to display the chapter in the HTML
 // (phrase and img in the #wholestory div  and the buttons in the #buttons div )
 
 function changeChapter(chapterToShow) {
 
-   removePreviousButtons(); 
-   removeText();
-   pageNumber();
+    removePreviousButtons();
+    removeText();
+    if (chapterToShow === chapter1) {
+        resetPageNumbers();
+    } else {
+        pageNumber();
+    }
+
+
+
 
     //append a new <p> to the #wholestory div 
     const wholestory = document.querySelector("#wholestory");
@@ -233,17 +215,35 @@ function changeChapter(chapterToShow) {
     if (chapterToShow.buttonChoice2.nextChapter !== null) {
         createButtons(chapterToShow.buttonChoice2);
     }
+    // ************************************
+    // if there are no buttons - then display RESTART button
+    if (chapterToShow.buttonChoice1.nextChapter === null && chapterToShow.buttonChoice2.nextChapter === null) {
+        document.getElementById('restart').style.display = 'block';
+        // document.getElementById("page1").innerHTML = Number(1) + Number(2)
+        // document.getElementById("page2").innerHTML = Number(2) + Number(2)    
+    }
+
+
+    // if there already are two buttons on the screen, then hide RESTART button
+    if (chapterToShow.buttonChoice1.nextChapter !== null && chapterToShow.buttonChoice2.nextChapter !== null) {
+        document.getElementById('restart').style.display = 'none';
+        // document.getElementById("page1").innerHTML = Number(1) + Number(2)
+        // document.getElementById("page2").innerHTML = Number(2) + Number(2)
+    }
+
 }
 
-        document.querySelector("#buttons").appendChild(button2);
-    
+
+// document.querySelector("#buttons").appendChild(button2);
 
 
-document.getElementById("dress").addEventListener("mouseenter", function() { 
-document.getElementById("dress-img").style.display = 'block';
-})
-    
-document.getElementById("dress").addEventListener("mouseleave", function() {
 
-document.getElementById("dress-img").style.display = 'none';
-})
+// document.getElementById("dress").addEventListener("mouseenter", function() { 
+// document.getElementById("dress-img").style.display = 'block';
+// })
+
+// document.getElementById("dress").addEventListener("mouseleave", function() {
+
+// document.getElementById("dress-img").style.display = 'none';
+// })
+
