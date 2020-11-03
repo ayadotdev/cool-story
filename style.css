@@ -573,7 +573,8 @@ footer{
 
 .yuri-link{
     font-weight:bolder;
-    background:none !important
+    background:none !important;
+    display:inline !important
 }
 
 
