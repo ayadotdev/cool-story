@@ -583,7 +583,7 @@ footer{
     .open-book .chapter-title {
         font-size: medium !important;
     }
-    top: -50px;
+    /* top: -50px; */
 }
 
 .yuri-link {
