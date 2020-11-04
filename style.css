@@ -8,11 +8,11 @@
 
 
 body {
-    background-image: url(https://image.freepik.com/free-photo/old-dark-brown-wooden-table-background_41471-9236.jpg);
+    background-image: url(img/pexels-pixabay-326311.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width:100vw;
-    height:100vh
+    height:100vh;
 }
 
 #wrapper {
@@ -408,6 +408,8 @@ button.ai-element{
  #wholestory {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    
+    font-family: 'Syne Mono', monospace;
   }
 
 
