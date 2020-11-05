@@ -1,10 +1,3 @@
-const chapter17 = {
-    phrase: "All right clearly you are trash and don’t belong here. GET OUT TRASH.",
-    img: "img/get-out-2.jpg",
-    buttonChoice1: { text: "", nextChapter: null },
-    buttonChoice2: { text: "", nextChapter: null }
-}
-
 const chapter16 = {
     phrase: "You wake up to discover you are tied to a chair… There is the waft smell of singed hair. There is a harem of cats sitting in front of you. They are wearing little leather outfits… “How cute” you mutter. The cats part like the red sea and all thats left is a slim cat with an hourglass waist and a penchant for violence. You realize there is a mirror sitting back of the room. “I look good” you say to yourself. “Mreeoww” The yowl of a feral storm adjacent to you. Its Aretha. “Aretha...how could you?” Aretha steps forward into the rays of moonbeams. She’s holding a bottle of gasoline. She says, “Mreeow meow meow meow” She sets you on fire and warms herself by the flame. YOU DEFINETYLY SHOULD HAVE QUIT BEFORE!",
     img: "img/see-you-next-time.jpg",
@@ -27,10 +20,10 @@ const chapter14 = {
 }
 
 const chapter13 = {
-    phrase: "MOAN...You open the door to discover a massive CAT MATING RITUAL. MRRRREOOOOWWWWWWWWWWWW they scream at you to close the door. Aretha bounds inside, she’s too old to have kittens but you’re worried that as a spinster cat her eyes might be bigger than her ovarian cancer. (i know you forgot she has ovarian cancer). YOU have two choices, Choice one you chase after her. Choice two you let your old bitty have some fun.",
-    img: "img/room-full-of-cats-2.jpg",
-    buttonChoice1: { text: "ONE", nextChapter: chapter14 },
-    buttonChoice2: { text: "TWO", nextChapter: chapter15 }
+    phrase: `MOAN...You open the door to discover a marjorie tied to a chair. You untie her immediately, she looks disheveled. “Are you alright?” “The cats. The Cats...they’ve gone, they’ve gone WILD” Apparently they have started a cult called the Wild Code Odyseey Cult. Where my female cat named Luz has been sacrifices country club members all evening. You stare at her in disbelief...She can tell you doubt her. “If you don’t believe just look in the room one over. They SET LINDA on FIRE!” There is a sudden creak and you hear the utterance of the door behind you close shut. You turn around slowly… Luz is sitting there. “Luz please don’t hurt us be a good kitty” Luz shakes her head no as she revs the engine of a chainsaw nearby. WHIRRRRRRRRRRRRR. BETTER LUCK NEXT TIME`,
+    img: "img/wanna-sit-on-this-chair-yes-no.jpg",
+    buttonChoice1: { text: "ONE", nextChapter: null },
+    buttonChoice2: { text: "TWO", nextChapter: null }
 }
 
 const chapter12 = {
@@ -62,10 +55,10 @@ const chapter9 = {
 }
 
 const chapter8 = {
-    phrase: "You drink the Martini Juice. Its refreshing yummy cRanberry. You ask the ladies what their names are...Four of them are named Corinne or something like that. The other ones name is Sheryl. Someone named Linda went to the bathroom and “should be back soon”. Everything is going pretty good but about an hour into the conversation things start to get a little fuzzy. Tom Petty is playing on the radio...you think to yourself…”Is that a radio?” You black out. DO YOU REALLY WANT TO GO ON, DARLING?",
+    phrase: "You drink the Martini Juice. Its refreshing yummy cRanberry. You ask the ladies what their names are...Four of them are named Corinne or something like that. The other ones name is Sheryl. Someone named Linda went to the bathroom and “should be back soon”. Everything is going pretty good but about an hour into the conversation things start to get a little fuzzy. Tom Petty is playing on the radio...you think to yourself…”Is that a radio?” You black out. Are you going to run away?",
     img: "img/room-full-of-cats-3.jpg",
-    buttonChoice1: { text: "DEFINETELY", nextChapter: chapter16 },
-    buttonChoice2: { text: "NO WAY", nextChapter: chapter17 }
+    buttonChoice1: { text: "No", nextChapter: chapter16 },
+    buttonChoice2: { text: "Yes", nextChapter: chapter11 }
 }
 
 const chapter7 = {
@@ -116,6 +109,17 @@ const chapter1 = {
     buttonChoice1: { text: "YES", nextChapter: chapter2 },
     buttonChoice2: { text: "NO", nextChapter: chapter5 }
 }
+
+const chapter0 = {
+    phrase: `“Oh hello there, welcome my dearest Agnes, I am so glad you came to join us.
+    You have been selected to join the very exclusive Cougar club. Certainly cause for celebration. The Cougar Club is the only club of its kind made for women of a certain age who like cats at a certain number (usually seven or more).
+    Well I have rambled long enough. I cannot wait to see you there. You arrive to the Cougar Country club in a honda civic with a vanity plate that says “CATSRPPL”. You’re wearing a moo-moo dress. You are Agnes Martin. 73 years old. You own thirteen cats each named after a famous Female Diva. You only brought one companion to the cougar country club however, your oldest cat, Aretha Franklemittens. Aretha unfortunately has ovarian cancer so you’ve decided to bring her along so she can live a little before she dies…fairly soon.`,
+    img: "img/country-club-overall-13-mysterious.jpg",
+    buttonChoice1: { text: "START", nextChapter: chapter1 },
+    buttonChoice2: { text: "", nextChapter: null }
+}
+
+
 
 //----------------LOGIC
 
@@ -217,7 +221,7 @@ function changeChapter(chapterToShow) {
 
     removePreviousButtons();
     removeText();
-    if (chapterToShow === chapter1) {
+    if (chapterToShow === chapter0) {
         resetPageNumbers();
     } else {
         increasePageNumber();
