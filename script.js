@@ -21,7 +21,7 @@ const chapter14 = {
 
 const chapter13 = {
     phrase: `MOAN...You open the door to discover a marjorie tied to a chair. You untie her immediately, she looks disheveled. “Are you alright?” “The cats. The Cats...they’ve gone, they’ve gone WILD” Apparently they have started a cult called the Wild Code Odyseey Cult. Where my female cat named Luz has been sacrifices country club members all evening. You stare at her in disbelief...She can tell you doubt her. “If you don’t believe just look in the room one over. They SET LINDA on FIRE!” There is a sudden creak and you hear the utterance of the door behind you close shut. You turn around slowly… Luz is sitting there. “Luz please don’t hurt us be a good kitty” Luz shakes her head no as she revs the engine of a chainsaw nearby. WHIRRRRRRRRRRRRR. BETTER LUCK NEXT TIME`,
-    img: "pictures/wanna-sit-on-this-chair-yes-no.jpg",
+    img: "img/wanna-sit-on-this-chair-yes-no.jpg",
     buttonChoice1: { text: "ONE", nextChapter: null },
     buttonChoice2: { text: "TWO", nextChapter: null }
 }
