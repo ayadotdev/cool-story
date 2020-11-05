@@ -1,6 +1,6 @@
 
 # Cool Story intercative text game :cat2: :older_woman: :cat2:
-## Project #1 for Wild code school bootcamp
+## Project #1 for Wild code school bootcamp :nerd_face:
 #### by Nikolai, Yuri, Teiko, Aya.
 
 ## Introduction :mage:
