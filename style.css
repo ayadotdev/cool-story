@@ -154,7 +154,7 @@ button.ai-element{
 
 
 .ai-element_type3 {
-	--uiaiElementLineColor: var(--aiElementLineColor, #905E2D);	
+	--uiaiElementLineColor: var(--aiElementLineColor, #bda083);	
 	--uiaiElementPadding: var(--aiElementPadding, 10px);
 	transition: color .3s ease-out;
 	z-index: 1;
