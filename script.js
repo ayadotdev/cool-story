@@ -117,33 +117,28 @@ const chapter1 = {
     buttonChoice2: { text: "NO", nextChapter: chapter5 }
 }
 
-
-
 //----------------LOGIC
 
 //remove all existing buttons from the #buttons div
 function removePreviousButtons() {
     //document.querySelector("#buttons").innerHTML = "";
-
     let buttonsDiv = document.getElementById("buttons");
-    buttonsDiv.querySelectorAll('*').forEach(button => button.remove());
+    buttonsDiv.querySelectorAll("*").forEach(button => button.remove());
 }
 //remove all text from wholestory div   
 function removeText() {
 
     let textDiv = document.getElementById("wholestory");
-    textDiv.querySelectorAll('*').forEach(p => p.remove());
-
+    textDiv.querySelectorAll("*").forEach(p => p.remove());
 }
 //add 2 to a previous number page
 
-let pageNumber = () => {
+let increasePageNumber = () => {
     document.getElementById("page1").innerHTML = Number(document.getElementById("page1").innerHTML) + Number(2);
     document.getElementById("page2").innerHTML = Number(document.getElementById("page2").innerHTML) + Number(2);
 }
 
 //this function creates buttons with css style 
-
 function createButtons(buttonChoice) {
 
     const divButton = document.createElement("div");
@@ -173,19 +168,9 @@ function resetPageNumbers() {
     document.getElementById("page2").innerHTML = Number(2) + Number(2);
 
 }
-// This function has only the logic to display the chapter in the HTML
-// (phrase and img in the #wholestory div  and the buttons in the #buttons div )
 
-function changeChapter(chapterToShow) {
 
-    removePreviousButtons();
-    removeText();
-    if (chapterToShow === chapter1) {
-        resetPageNumbers();
-    } else {
-        pageNumber();
-    }
-
+function addParagraphAndImage(chapterToShow) {
     //append a new <p> to the #wholestory div 
     const wholestory = document.querySelector("#wholestory");
     const paragraph = document.createElement("p");
@@ -199,8 +184,11 @@ function changeChapter(chapterToShow) {
     img.height = "250";
 
     wholestory.appendChild(img);
+}
 
 
+
+function manageButtons(chapterToShow) {
     //if there is a nextChapter in buttonChoice1 we add the button 
     if (chapterToShow.buttonChoice1.nextChapter !== null) {
         createButtons(chapterToShow.buttonChoice1);
@@ -214,30 +202,29 @@ function changeChapter(chapterToShow) {
     // if there are no buttons - then display RESTART button
     if (chapterToShow.buttonChoice1.nextChapter === null && chapterToShow.buttonChoice2.nextChapter === null) {
         document.getElementById('restart').style.display = 'block';
-        // document.getElementById("page1").innerHTML = Number(1) + Number(2)
-        // document.getElementById("page2").innerHTML = Number(2) + Number(2)    
     }
 
     // if there already are two buttons on the screen, then hide RESTART button
     if (chapterToShow.buttonChoice1.nextChapter !== null && chapterToShow.buttonChoice2.nextChapter !== null) {
         document.getElementById('restart').style.display = 'none';
-        // document.getElementById("page1").innerHTML = Number(1) + Number(2)
-        // document.getElementById("page2").innerHTML = Number(2) + Number(2)
     }
+}
+// This function has only the logic to display the chapter in the HTML
+// (this function calls other function to remove previuos buttons, remove text, increase page numbers, add next parag and an image)
+
+
+function changeChapter(chapterToShow) {
+
+    removePreviousButtons();
+    removeText();
+    if (chapterToShow === chapter1) {
+        resetPageNumbers();
+    } else {
+        increasePageNumber();
+    }
+    addParagraphAndImage(chapterToShow);
+    manageButtons(chapterToShow);
 
 }
 
-
-// document.querySelector("#buttons").appendChild(button2);
-
-
-
-// document.getElementById("dress").addEventListener("mouseenter", function() { 
-// document.getElementById("dress-img").style.display = 'block';
-// })
-
-// document.getElementById("dress").addEventListener("mouseleave", function() {
-
-// document.getElementById("dress-img").style.display = 'none';
-// })
 
