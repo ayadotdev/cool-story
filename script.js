@@ -165,8 +165,6 @@ function createButtons(buttonChoice) {
 
     document.querySelector("#buttons").appendChild(divButton);
 
-
-
 }
 
 //this function turns pages numbers to 3 and 4 (our  1st chapter)
@@ -187,9 +185,6 @@ function changeChapter(chapterToShow) {
     } else {
         pageNumber();
     }
-
-
-
 
     //append a new <p> to the #wholestory div 
     const wholestory = document.querySelector("#wholestory");
@@ -222,7 +217,6 @@ function changeChapter(chapterToShow) {
         // document.getElementById("page1").innerHTML = Number(1) + Number(2)
         // document.getElementById("page2").innerHTML = Number(2) + Number(2)    
     }
-
 
     // if there already are two buttons on the screen, then hide RESTART button
     if (chapterToShow.buttonChoice1.nextChapter !== null && chapterToShow.buttonChoice2.nextChapter !== null) {
