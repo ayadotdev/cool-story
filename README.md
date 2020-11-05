@@ -29,5 +29,29 @@ const chapter1 = {
     buttonChoice2: { text: "NO", nextChapter: chapter5 }
 }
 ```
+
+## The main function :dart:
+
+This function has only the logic to display the chapter in the HTML. It calls other function to remove previuos buttons, remove text, increase page numbers, add next parag and an image.
+
+```javascript
+function changeChapter(chapterToShow) {
+
+    removePreviousButtons();
+    removeText();
+    if (chapterToShow === chapter0) {
+        resetPageNumbers();
+    } else {
+        increasePageNumber();
+    }
+    addParagraphAndImage(chapterToShow);
+    manageButtons(chapterToShow);
+
+}
+```
+
 ## Sources :bulb:
 [Book layout on Codepen](https://codepen.io/erinesullivan/pen/gxdbzp)
+
+## Live demo :clapper:
+[Demo](https://youthful-heisenberg-fd3f90.netlify.app/)
