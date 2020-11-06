@@ -57,8 +57,8 @@ const chapter9 = {
 const chapter8 = {
     phrase: "You drink the Martini Juice. Its refreshing yummy cRanberry. You ask the ladies what their names are...Four of them are named Corinne or something like that. The other ones name is Sheryl. Someone named Linda went to the bathroom and “should be back soon”. Everything is going pretty good but about an hour into the conversation things start to get a little fuzzy. Tom Petty is playing on the radio...you think to yourself…”Is that a radio?” You black out. Are you going to run away?",
     img: "img/room-full-of-cats-3.jpg",
-    buttonChoice1: { text: "No", nextChapter: chapter16 },
-    buttonChoice2: { text: "Yes", nextChapter: chapter11 }
+    buttonChoice1: { text: "NO", nextChapter: chapter16 },
+    buttonChoice2: { text: "YES", nextChapter: chapter11 }
 }
 
 const chapter7 = {
