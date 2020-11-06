@@ -130,7 +130,7 @@ function removePreviousButtons() {
     buttonsDiv.querySelectorAll("*").forEach(button => button.remove());
 }
 //remove all text from wholestory div   
-function removeText() {
+function removeTextAndImages() {
 
     let textDiv = document.getElementById("wholestory");
     textDiv.querySelectorAll("*").forEach(p => p.remove());
@@ -220,7 +220,7 @@ function manageButtons(chapterToShow) {
 function changeChapter(chapterToShow) {
 
     removePreviousButtons();
-    removeText();
+    removeTextAndImages();
     if (chapterToShow === chapter0) {
         resetPageNumbers();
     } else {
